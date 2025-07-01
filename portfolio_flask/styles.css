@@ -1,0 +1,167 @@
+/* Global Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header and Nav */
+header {
+    background: #0d47a1;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #64b5f6;
+    width: 0;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+    width: 100%;
+}
+
+main {
+    padding: 2rem 5%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #0d47a1;
+    margin-top: 2rem;
+    border-bottom: 2px solid #64b5f6;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background: #64b5f6;
+    color: white;
+    margin: 8px;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+.skills-list li:hover {
+    background: #1976d2;
+}
+
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-left: 6px solid #1976d2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Form */
+form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #0d47a1;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #1565c0;
+}
+
+/* Thank You Page */
+.thank-you {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.thank-you blockquote {
+    font-style: italic;
+    color: #333;
+    background: #e3f2fd;
+    padding: 1rem;
+    border-left: 5px solid #1976d2;
+    margin: 1rem 0;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0d47a1;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #0d47a1;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
